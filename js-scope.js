@@ -11,7 +11,7 @@ Variables declared with `var` have function scope or global scope, but not block
 
 // Example:
 
-function example() {
+function example1() {
     var x = 10;
     if (true) {
         var y = 20;
@@ -22,7 +22,7 @@ function example() {
     console.log(y); // Output: 20
 }
 
-example();
+example1();
 console.log(x); // ReferenceError: x is not defined
 console.log(y); // ReferenceError: y is not defined
 
@@ -38,7 +38,7 @@ console.log(y); // ReferenceError: y is not defined
 /*Variables declared with `let` have block scope. This means that they are accessible only within the block in which they are defined.*/
 
 // Example:
-function example() {
+function example2() {
     let x = 10;
     if (true) {
         let y = 20;
@@ -49,7 +49,7 @@ function example() {
     console.log(y); // ReferenceError: y is not defined
 }
 
-example();
+example2();
 console.log(x); // ReferenceError: x is not defined
 console.log(y); // ReferenceError: y is not defined
 
@@ -63,7 +63,7 @@ console.log(y); // ReferenceError: y is not defined
 
 // Example:
 
-function example() {
+function example3() {
     const x = 10;
     if (true) {
         const y = 20;
@@ -74,7 +74,7 @@ function example() {
     console.log(y); // ReferenceError: y is not defined
 }
 
-example();
+example3();
 console.log(x); // ReferenceError: x is not defined
 console.log(y); // ReferenceError: y is not defined
 
